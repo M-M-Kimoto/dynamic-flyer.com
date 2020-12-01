@@ -1,0 +1,27 @@
+#search{
+    margin-top: 5px;
+    margin-bottom: 5px;;
+}
+
+#search #searchItem-End{
+    margin-bottom: 15px;
+}
+#search .item #btn_Search{
+    width: 100%;
+}
+
+#search .item #btn_ViewChange{
+    width: 100%;
+	box-shadow: 0 3px 0 #777;
+	background: #999;
+}
+
+#search-bar .item #btn_ViewChange #btn_ViewChange_msg{
+    margin: 0 ;
+    padding: 0 ;
+
+}
+
+#shops{
+    margin-top: 10px;
+}

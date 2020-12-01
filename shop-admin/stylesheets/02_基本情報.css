@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+#top-msg{
+	color:red;
+}
+
+.item #options{
+	display:block;
+	width: 100%;
+	margin : 0 auto;
+}
+
+.content-item .item #メッセージ {
+	vertical-align: top;
+	padding: 5px 10px;
+	/*
+	font-size: 86%;
+	*/
+	border: none;
+	border-radius: 3px;
+	background: #ddf0ff;
+	width: 95%;
+}
+
+.item #options .option{
+	display: inline-block;
+	text-align: left;
+	width: 49%; /* 50%ではダメだった */
+}
+.item #options .option .checkbox{
+	vertical-align: middle;
+}
+
+
+

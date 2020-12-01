@@ -1,0 +1,58 @@
+
+/*
+.content-item {
+	width: 345px;
+}
+.content-item form{
+	display: block;
+	width:100%;
+}
+*/
+
+#page-title{
+	float: left;
+	width:100%;
+}
+
+.content-item .item .err{
+	color: red;
+}
+
+.content-item .item .date{
+	width:135px
+}
+.content-item .item .time{
+	width:70px;
+}
+.content-item .item .number-time{
+	width:50px;
+}
+input:focus, select:focus, textarea:focus{background-color: rgba(252, 255, 102, 0.726);}
+
+
+/*
+ボタン関係
+*/
+#upd-bak-btn{
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	max-width: 350px;
+	height: 30px;
+	margin: 10px auto;
+	padding: 0 auto;
+	background-color: transparent;
+}
+#btn_Update,#btn_back{
+	width: 30%;
+	margin: 0 15px;
+}
+#btn_Update {
+	box-shadow: 0 3px 0 #2887d1;
+	background: #4eaaf1;
+}
+
+#btn_delete {
+	width : 100%;
+}
+

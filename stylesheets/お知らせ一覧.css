@@ -1,0 +1,116 @@
+
+#errMsg{
+    width: 80%;
+    max-width: 800px;
+}
+
+.content-notice {
+	margin-left: auto;
+	margin-right: auto;
+    padding:0;
+
+	user-select: none; 
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer */
+	-khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+	-webkit-user-select: none; /* Chrome, Safari, and Opera */
+	-webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+}
+
+.content-notice #notice-table{
+	width: 98%;
+	max-width: 800px;
+    margin : 0 auto;
+    border-collapse: separate;
+    border-spacing: 0px 5px;
+
+}
+
+.content-notice #notice-table tr{
+    cursor: pointer;
+    margin : 0 auto;
+}
+.content-notice #notice-table tr:hover{
+    background-color: #d4f0fd;
+}
+.content-notice #notice-table tr th{
+    background-color: #75797a; 
+    color: #fff;
+}
+
+.content-notice #notice-table th,.content-notice #notice-table td{
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 0;
+    margin : 0 auto;
+    margin: 0 0;
+    padding : 0 0;
+}
+
+.content-notice #notice-table td{
+    color : #000;
+}
+    
+/*
+.content-notice #notice-table .clm-noticeKbn{
+    width: 5%;
+    max-width: 30px;
+    min-width: 25px;
+    font-size: 18px;
+    margin: 0 0;
+    padding : 0 0;
+    color: yellow;
+}	
+*/
+.content-notice #notice-table .clm-shopName{
+    width: 30%;
+    margin: 0 0;
+    padding : 0 0;
+}
+.content-notice #notice-table .clm-startTime{
+    width: 25%;
+    margin: 0 0;
+    padding : 0 0;
+}
+.content-notice #notice-table .clm-msg{
+    margin: 0 0;
+    padding : 0 0;
+}
+.content-notice #notice-table td[class="clm-msg"]{
+    text-align: left;
+    font-size: 12px;
+    padding: 1%;
+}
+      
+    
+    
+
+/* 375px以下 */
+@media (max-width: 425px){
+    .content-notice #notice-table .clm-startTime{
+        display: none;
+    }
+}
+@media (min-width: 426px){
+    .content-notice #notice-table .clm-startTime{
+        display: table-cell;
+    }
+}
+
+/* ########### 950px以上 ########### */
+@media (min-width: 750px) {
+
+	.content-notice{
+		width: 750px;
+	}
+}
+
+/* ########### 1400px以上 ########### */
+@media (min-width: 1125px) {
+	
+	/* 全体の横幅を固定 */
+	.content-notice{
+		width: 1125px;
+	}
+	
+}

@@ -1,0 +1,16 @@
+
+.content-item .item #メッセージ {
+	vertical-align: top;
+	padding: 5px 10px;
+	/*
+	font-size: 86%;
+	*/
+	border: none;
+	border-radius: 3px;
+	background: #ddf0ff;
+	width: 95%;
+}
+
+.content-item #upd-bak-btn {
+	text-align: center;
+}

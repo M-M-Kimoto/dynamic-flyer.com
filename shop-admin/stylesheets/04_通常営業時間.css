@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+#top-msg{
+	color:red;
+}
+
+/*
+一覧
+*/
+#reg-table{
+    table-layout: fixed;
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin : 0 auto;
+	width: 100%;
+	max-width: 400px;
+  }
+
+#reg-table tr{
+border-bottom: solid 1px #eee;
+cursor: pointer;
+}
+
+#reg-table tr:hover{
+background-color: #d4f0fd;
+}
+
+#reg-table th,#reg-table td{
+text-align: center;
+font-size: 14px;
+padding: 10px 0;
+}
+
+/*
+#reg-table .clm-week{
+	width: 15%;
+}
+*/	
+#reg-table .clm-open{
+	width: 25%;
+}
+#reg-table .clm-close{
+	width: 25%;
+}
+#reg-table .clm-delBtn{
+	width: 15%;
+}
+  

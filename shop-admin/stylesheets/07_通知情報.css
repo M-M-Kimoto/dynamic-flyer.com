@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+#top-msg{
+	color:red;
+}
+/* ユーザ登録機能排除に伴い制限 2020/10/31 */
+.content-item #code{
+	display: none;
+}
+
+.content-item .item #メッセージ {
+	vertical-align: top;
+	padding: 5px 10px;
+	/*
+	font-size: 86%;
+	*/
+	border: none;
+	border-radius: 3px;
+	background: #ddf0ff;
+	width: 90%;
+}
+
+.item .url{
+	width:90%;
+}
+.item #url-btn{
+	margin-top: 5px;
+	width: 100%;
+	box-shadow: 0 3px 0 #28d174;
+	background: #4ef14e;
+
+}
+
+input:focus, select:focus, textarea:focus{background-color: rgba(252, 255, 102, 0.726);}
+
+/*
+一覧
+*/
+#reg-table{
+	width: 100%;
+	max-width: 350px;
+	margin : 0 auto;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+#reg-table tr{
+border-bottom: solid 1px #eee;
+cursor: pointer;
+margin : 0 auto;
+}
+
+#reg-table tr:hover{
+background-color: #d4f0fd;
+}
+
+#reg-table th,#reg-table td{
+text-align: center;
+font-size: 14px;
+padding: 10px 0;
+margin : 0 auto;
+}
+
+#reg-table .clm-dateWhile{
+	width: 150px;
+}
+
+/* ユーザ登録機能排除に伴い制限 2020/10/31 */
+#reg-table .clm-dis{
+	display: none;
+}
+  
+
+/* ########### 449px以下 ########### */
+@media (max-width: 449px) {
+
+	#reg-table .clm-dis{
+		width: 30%;
+	}
+	/*
+	#reg-table .clm-msg{
+		width: 30%;
+	}
+	*/
+	#reg-table .clm-link{
+		display: none;
+	}
+	#reg-table .clm-delBtn{
+		width: 10%;
+	}
+	  
+}
+
+/* ########### 450px以上 ########### */
+@media (min-width: 450px) {
+
+	#reg-table{
+		max-width: 800px;
+	  }
+	  #reg-table .clm-dis{
+		  width: 15%;
+	  }
+	  /*
+	  #reg-table .clm-msg{
+		  width: 25%;
+	  }
+	  */
+	  #reg-table .clm-link{
+		  text-align: left;
+		  width: 20%;
+	  }
+	  #reg-table .clm-delBtn{
+		  width: 10%;
+	  }
+		
+
+}

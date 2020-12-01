@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+/* �{�b�N�X�̍��E */
+.head
+{
+    /*
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    */
+    height: 50px;
+}
+
+.head #title{
+    float: left;
+    width: 50%;
+    padding:0px 0px;
+    margin: 0px 0px;
+    /*
+    height: 100%;
+    */
+}
+
+.head #title h6{
+    /*
+    line-height: 50px;
+    */
+    float: left;
+    margin-top: 0px;
+    /*
+    height: 50px;
+    */
+    /*
+    border: 1px solid;
+    */
+    border: none;
+}
+
+.head #headmenu{
+    float: left;
+    width: 50%;
+    padding:0px 0px;
+    margin: 0px 0px;
+    /*
+    height: 100%;
+    */
+}
+
+.head .headmenu-btn {
+    float: right;
+    margin: 0 10px;
+    padding: 0px 5px;
+    /*
+    width: 100px;
+    height: 50px;
+    */
+	font-size: 60%;
+	color: #000;
+	box-shadow: 0 0px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    /*
+    border: 1px solid;
+    */
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+/* ########### 359px以下 ########### */
+@media (max-width: 359px) {
+}
+
+/* ########### 599px以下 ########### */
+@media (max-width: 599px) {
+}
+
+/* ########### 767px以下 ########### */
+@media (max-width: 767px) {
+}
+
+/* ########### 768px以上 ########### */
+@media (min-width: 768px) {
+}

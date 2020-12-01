@@ -1,0 +1,179 @@
+@charset "utf-8";
+
+.content-item{
+	margin-left: auto;
+	margin-right: auto;
+	width: 98%;
+	padding:0;
+}
+
+/* フォーム内容に対して */
+.content-item .item{
+	width: 100%;
+	max-width: 350px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	text-align: left;
+}
+
+.content-item .item .explain {
+	font-size: 12px;
+}
+
+/*
+*
+*  項目名ラベル関係
+*
+*/
+
+.content-item .item .itemLabel-primary, .content-item .item .itemLabel-nomal, .content-item .item .itemLabel-noedit {
+	display: block;
+	/*padding: 0.25em 0.5em; */ /*上下 左右の余白*/
+	color: #494949;/*文字色*/
+	background: transparent;/*背景透明に*/
+	width: 100%;
+	text-align: left;
+}
+.content-item .item .itemLabel-primary{
+	border-left: solid 5px #e67d7d;/*左線*/
+}
+.content-item .item .itemLabel-nomal {
+	/* padding: 0.25em 0.5em; *//*上下 左右の余白*/
+	border-left: solid 5px #7db4e6;/*左線*/
+}
+.content-item .item .itemLabel-noedit {
+	/* padding: 0.25em 0.5em; *//*上下 左右の余白*/
+	border-left: solid 5px #000000;/*左線*/
+}
+
+/*
+*
+*  項目入力覧関係
+*
+*/
+.content-item .item input , .content-item .item select, .content-item .item textarea{
+	/*padding: 5px 10px;*/
+	padding: 5px 0px;
+	font-size: 86%;
+	border: none;
+	/* border-radius: 3px; */
+	background: #ddf0ff;
+
+
+}
+
+.content-item .item .text, .content-item .item .date , .content-item .item select, .content-item .item textarea{
+	width: 100%;
+}
+
+.content-item .item input:focus, .content-item .item select:focus, .content-item .item textarea:focus{
+	background: #33FFFF;
+}
+
+.content-item .item .errMsg{
+	color: red;
+	font-size: 14px;
+}
+
+/*
+*
+*  ボタン関係
+*
+*/
+.content-item .item button {
+	padding: 5px 20px;
+	font-size: 100%;
+	color: #fff;
+	cursor: pointer;
+	border: none;
+	border-radius: 3px;
+	width: 90px;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0 3px 0 #2887d1;
+	background: #4eaaf1;
+}
+
+.content-item .item button[name=btn_back] {
+	box-shadow: 0 3px 0 #777;
+	background: #999;
+}
+
+/*
+*
+* 画像とメッセージを重ねる場合のプレビュー表示
+*
+*/
+#preview{
+    border-style: none;
+    padding: 5px;
+    text-align: center;
+}
+#preview .ImgMsg{
+    display: inline-block;
+    margin-top:0;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #666666;
+
+    position: relative;
+}
+#preview .ImgMsg img{
+    width: auto;
+    height: auto;
+    max-width:100%;
+    max-height: 600px;
+    vertical-align: bottom;
+}
+#preview .msg{
+    width: auto;
+    max-width:100%;
+    height: auto;
+    vertical-align: bottom;
+    text-align: center;
+    margin: 0;
+    padding: 2px;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    bottom: 7%;
+    left: 3%;
+
+    color: black;
+    border: ridge 3px rgba(56, 56, 56, 0.55);
+}
+
+#preview .msg p{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+@media (max-width: 749px) {
+
+	/* 全体の横幅を固定 */
+	.content-item{
+		width: 375px;
+	}
+}
+
+@media (min-width: 750px) {
+
+	.content-item{
+		width: 750px;
+	}
+	/*
+	.shop-inner h1{
+		background-color: #524e3c;
+	}
+	*/
+
+}
+@media (min-width: 1125px) {
+	
+	/* 全体の横幅を固定 */
+	.content-item{
+		width: 1125px;
+	}
+	
+}

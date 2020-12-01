@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+#top-msg{
+	color:red;
+}
+
+/* 各項目について */
+
+.content-item .item .number{
+	width: 30px;
+}
+.content-item .item #レベル{
+	width:100px;
+}
+
+.item .url{
+	width:90%;
+}
+.item #url-btn{
+	margin-top: 5px;
+	width: 100%;
+	box-shadow: 0 3px 0 #28d174;
+	background: #4ef14e;
+
+}
+
+/*
+一覧
+*/
+#reg-table{
+	width: 100%;
+	max-width: 350px;
+	margin : 0 auto;
+	border-collapse: collapse;
+	border-spacing: 0;
+  }
+
+#reg-table tr{
+border-bottom: solid 1px #eee;
+cursor: pointer;
+margin : 0 auto;
+}
+
+#reg-table tr:hover{
+background-color: #d4f0fd;
+}
+
+#reg-table th,#reg-table td{
+text-align: center;
+font-size: 14px;
+padding: 10px 0;
+margin : 0 auto;
+}
+
+#reg-table .clm-level{
+	width: 10%;
+}	
+#reg-table .clm-name{
+	width: 40%;
+}
+#reg-table .clm-period{
+	width: 40%;
+}
+#reg-table .clm-delBtn{
+	width: 10%;
+}
+
+
+/* ########### 449px以下 ########### */
+@media (max-width: 449px) {
+
+	#reg-table .clm-level{
+		width: 15%;
+	}	
+	#reg-table .clm-name{
+		width: 20%;
+	}
+	#reg-table .clm-period{
+		width: 50%;
+	}
+	#reg-table .clm-delBtn{
+		width: 15%;
+	}
+}
+
+/* ########### 450px以上 ########### */
+@media (min-width: 450px) {
+
+	#reg-table{
+		max-width: 800px;
+	  }
+}

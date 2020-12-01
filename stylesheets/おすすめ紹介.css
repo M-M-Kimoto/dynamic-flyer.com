@@ -1,0 +1,258 @@
+#pageTitle-lbl{
+    font-size: 20px;
+}
+
+.content-shopDetails{
+    padding: 5px;
+    width: 80%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 5px #dddddd;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.content-shopDetails .inner{
+    display: inline-block;
+    width: 100%;
+    margin-left: auto;
+    margin-right:auto;
+}
+.content-shopDetails h1{
+    margin-top:0;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #000000;
+}
+.content-shopDetails h2{
+    margin-top:0;
+    margin-bottom: 2px;
+    font-size: 18px;
+    color: #666666;
+}
+
+/*
+*
+*トップ画像
+*
+*/
+#top{
+    border-style: none;
+    /*
+    max-width:600px;
+    max-height:600px;
+    */
+}
+ #top .img{
+    display: inline-block;
+    margin-top:0;
+    margin-bottom: 5px;
+    /*
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    */
+    font-size: 18px;
+    color: #666666;
+    text-align: center;
+
+    position: relative;
+}
+#top .img .text{
+    width: auto;
+    max-width:100%;
+    height: auto;
+    vertical-align: bottom;
+    text-align: center;
+    margin: 0;
+    padding: 2px;
+    background-color: rgba(255,255,255,0.7);
+    position: absolute;
+    bottom: 7%;
+    left: 3%;
+
+    color: black;
+    border: ridge 3px rgba(56, 56, 56, 0.55);
+}
+
+#top .img #topImg{
+    width: auto;
+    height: auto;
+    max-width:100%;
+    max-height: 650px;
+    vertical-align: bottom;
+}
+
+/* 商品名 */
+#top #catchText p{
+    margin: 0;
+    padding: 0;
+}
+#top #catchText #catchShopName{
+    font-size: 20px;
+}
+#top #catchText #catchMsg{
+    font-size: 14px;
+}
+
+
+
+/*
+*
+* 詳細メッセージ
+*
+*/
+#details #detailsMsg{
+    text-align: left;
+    font-size: 18px;
+}
+
+/*
+*
+* おすすめ情報・ショップ情報
+*
+*/
+#info #recomInfo{
+    margin-bottom: 5px ;
+}
+#info #mstInfo{
+    margin-top: 5px ;
+}
+#info table{
+    width: 100%;
+}
+#info table tr{
+    display: block;
+    border-bottom: dotted 1px #666666;
+}
+#info table .clm-val{
+    text-align: left;
+}
+#info #recomInfo-list .clm-item{
+    width: 100px;
+}
+#info #mstInfo-list .clm-item{
+    width: 100px;
+}
+
+/*
+*
+* リンク
+*
+*/
+#link #regPage{
+    width: 95%;
+    display: block;
+    margin-top:5px;
+    margin-bottom: 5px;;
+    margin-left: auto;
+    margin-right: auto;
+}
+#link #regPage ul{
+    text-align: left;
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+#link #regPage li a{
+    display: block;
+    padding: 5ps;
+    border-bottom: dotted 2px #dddddd;
+    color: #000000;
+    font-size: 18px;
+    text-decoration: none;
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#link #regPage li a:hover {
+    background-color: #eeeeee;
+}
+
+
+/* SNS */
+#link #SNS{
+    display: inline-block;
+
+    margin-top:5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding:0;
+    width: 95%;
+}
+
+#link #SNS .SNS-icon {
+    float: left;
+    width : 25% ;
+}
+
+#link #SNS .SNS-icon a{
+    content: "";
+    display: block;
+    clear: both;
+    margin: auto;
+}
+#link #SNS .SNS-icon img{
+    display: block;
+    height: 90%;
+    width: 90%;
+    margin: auto;
+}
+
+
+@media (max-width: 767px){
+
+    #address #text ul li{
+        font-size: 14px;
+    }
+}
+@media (min-width: 768px){
+
+    #shopDetails:after {
+        content: "";
+        display: block;
+        clear:both;
+    }
+
+    .content-shopDetails:after{
+        content: "";
+        display:flex;
+        clear: both;
+    }
+    .content-shopDetails .left{
+        float: left;
+    }
+    .content-shopDetails .right{
+        float: left;
+    }
+
+    #siteContent .left{
+        width: 100%;
+    }
+
+    #info .left{
+        width: 50%;
+    }
+    #info .right{
+        width: 50%;
+    }
+
+    #link .left{
+        width: 50%;
+    }
+    #link .right{
+        width: 50%;
+    }
+    
+    #other .left{
+        width: 50%;
+
+    }
+    #other .right{
+        width: 50%;
+    }
+}
